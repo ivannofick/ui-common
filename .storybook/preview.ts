@@ -1,10 +1,11 @@
-/** @type { import('@storybook/react').Preview } */
-const preview = {
+import type { Preview } from "@storybook/react";
+import '../libs/index.css';
+const preview: Preview = {
   parameters: {
     controls: {
       matchers: {
         color: /(background|color)$/i,
-        date: /Date$/,
+        date: /Date$/i,
       },
     },
   },
