@@ -1,7 +1,7 @@
 {
-  "name": "app-1",
-  "private": true,
+  "name": "ui-common",
   "version": "1.0.0",
+  "author": "ivannofick",
   "type": "module",
   "scripts": {
     "dev": "vite",
