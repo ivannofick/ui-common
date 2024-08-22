@@ -18,7 +18,7 @@
     }
   },
   "scripts": {
-    "build": "yarn clean && vite build",
+    "build": "tsc && yarn clean && vite build",
     "dev": "yarn clean && vite build --watch",
     "storybook": "storybook dev -p 6006",
     "serve": "yarn clean && yarn build && yarn build-storybook && vite serve --port 3000 ./storybook-static",
@@ -26,10 +26,7 @@
     "clean": "rm -rf dist && rm -rf storybook-static",
     "build-storybook": "storybook build"
   },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@chromatic-com/storybook": "^1.7.0",
     "@storybook/addon-docs": "^8.2.9",
@@ -59,7 +56,9 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1",
-    "vite-plugin-dts": "^4.0.3"
+    "vite-plugin-dts": "^4.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "eslintConfig": {
     "extends": [
