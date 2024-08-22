@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
+      entry: resolve(__dirname, 'libs/index.ts'),
       name: 'Index',
       formats: ['es', 'umd'],
       fileName: (format) => `index.${format}.js`,
