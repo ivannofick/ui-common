@@ -18,7 +18,7 @@
     }
   },
   "scripts": {
-    "build": "tsc && yarn clean && vite build",
+    "build": "yarn clean && vite build && tsc",
     "dev": "yarn clean && vite build --watch",
     "storybook": "storybook dev -p 6006",
     "serve": "yarn clean && yarn build && yarn build-storybook && vite serve --port 3000 ./storybook-static",

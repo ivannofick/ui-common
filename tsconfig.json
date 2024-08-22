@@ -3,7 +3,7 @@
       "declaration": true,
       "declarationMap": true,
       "emitDeclarationOnly": true,
-      "outDir": "./",
+      "outDir": "./dist/",
       "strict": true,
       "moduleResolution": "node",
       "jsx": "react",
@@ -13,8 +13,7 @@
       "target": "esnext"
     },
     "include": [
-        "./libs",
-        "./stories"
+        "./libs/"
     ],
     "exclude": [
         "node_modules"
